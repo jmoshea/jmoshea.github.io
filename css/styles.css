@@ -21,9 +21,7 @@ header nav {
   display: flex;
   justify-content: flex-end;
 }
-h9{
-  font-family:"Times New Roman", Times, serif;
-}
+
 header p {
   padding: 0 20px;
   margin: 0;
@@ -32,8 +30,7 @@ header p {
 .jumbotron {
   display: flex;
   align-items: center;
-  height: 400px;
-  text-shadow: 0.25px 0.25px 0.25px #000000;
+  height: 25rem;
 }
 
 
@@ -49,20 +46,14 @@ section .row img {
 .btn.btn-primary {
 }
 
-/* .btn.btn-primary:hover {
-  color: #ffffff;
-  background-color: #fbd1d5;
-} */
-
-/* .btn-secondary {
-  background-color: #E8DFE0;
-  color: #ffffff;
-  margin: 0 0 30px;
-} */
 
 footer {
   font-size: 12px;
   padding: 20px 0;
+}
+
+h9{
+  font-family:"Times New Roman", Times, serif;
 }
 
 footer .col-sm-8 {
@@ -74,33 +65,28 @@ footer ul {
   list-style: none;
 }
 
-footer li img {
-  width: 32px;
-  height: 32px;
-}
-
 h1{
   border-bottom:1px solid #CCC;
   padding-bottom:3px;
 }
 
-#announcements{
-  padding-top: 50px;
-}
-#additional_info{
-  padding-top: 50px;
+#state-dropdown-menu{
+  overflow-y:auto;
+  max-height:40vh;
 }
 
-#logo{
-  display: block;
-  text-align: center;
-  padding-bottom: 20px;
+#nav-title{
+  font-size: 18px;
 }
 
-#trinmac-virtual-info{
-  padding-top: 30px;
+.wireframe-image{
+  display: inline;
 }
 
-#trinmac-virtual-archive{
-  padding-top:30px;
+#about-jumbo{
+  background: url(../images/covid-cover-sign.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-opacity: 0.5;
+  background-attachment: fixed;
 }
