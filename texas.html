@@ -14,6 +14,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdn.plot.ly/plotly-2.6.3.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
@@ -90,6 +91,926 @@
     <h1>Texas</h1>
     <h2>Fully Vaccinated People Over Time</h2>
   </header>
+  <div id="micro1"></div>
+  <script>
+    let damon = [
+      {
+        x:[],
+        y:[],
+        type: 'scatter'
+      }
+    ];
+    
+      damon[0]["x"].push('2021-01-12')
+      damon[0]["y"].push(0.35);
+    
+      damon[0]["x"].push('2021-01-13')
+      damon[0]["y"].push(0.4);
+    
+      damon[0]["x"].push('2021-01-14')
+      damon[0]["y"].push();
+    
+      damon[0]["x"].push('2021-01-15')
+      damon[0]["y"].push(0.54);
+    
+      damon[0]["x"].push('2021-01-16')
+      damon[0]["y"].push();
+    
+      damon[0]["x"].push('2021-01-17')
+      damon[0]["y"].push();
+    
+      damon[0]["x"].push('2021-01-18')
+      damon[0]["y"].push();
+    
+      damon[0]["x"].push('2021-01-19')
+      damon[0]["y"].push(0.62);
+    
+      damon[0]["x"].push('2021-01-20')
+      damon[0]["y"].push(0.65);
+    
+      damon[0]["x"].push('2021-01-21')
+      damon[0]["y"].push(0.71);
+    
+      damon[0]["x"].push('2021-01-22')
+      damon[0]["y"].push(0.8);
+    
+      damon[0]["x"].push('2021-01-23')
+      damon[0]["y"].push(0.87);
+    
+      damon[0]["x"].push('2021-01-24')
+      damon[0]["y"].push(0.89);
+    
+      damon[0]["x"].push('2021-01-25')
+      damon[0]["y"].push(0.93);
+    
+      damon[0]["x"].push('2021-01-26')
+      damon[0]["y"].push(1.04);
+    
+      damon[0]["x"].push('2021-01-27')
+      damon[0]["y"].push(1.12);
+    
+      damon[0]["x"].push('2021-01-28')
+      damon[0]["y"].push(1.29);
+    
+      damon[0]["x"].push('2021-01-29')
+      damon[0]["y"].push(1.43);
+    
+      damon[0]["x"].push('2021-01-30')
+      damon[0]["y"].push(1.56);
+    
+      damon[0]["x"].push('2021-01-31')
+      damon[0]["y"].push(1.65);
+    
+      damon[0]["x"].push('2021-02-01')
+      damon[0]["y"].push(1.73);
+    
+      damon[0]["x"].push('2021-02-02')
+      damon[0]["y"].push(1.73);
+    
+      damon[0]["x"].push('2021-02-03')
+      damon[0]["y"].push(1.95);
+    
+      damon[0]["x"].push('2021-02-04')
+      damon[0]["y"].push(2.15);
+    
+      damon[0]["x"].push('2021-02-05')
+      damon[0]["y"].push(2.31);
+    
+      damon[0]["x"].push('2021-02-06')
+      damon[0]["y"].push(2.53);
+    
+      damon[0]["x"].push('2021-02-07')
+      damon[0]["y"].push(2.69);
+    
+      damon[0]["x"].push('2021-02-08')
+      damon[0]["y"].push(2.78);
+    
+      damon[0]["x"].push('2021-02-09')
+      damon[0]["y"].push(2.91);
+    
+      damon[0]["x"].push('2021-02-10')
+      damon[0]["y"].push(3.08);
+    
+      damon[0]["x"].push('2021-02-11')
+      damon[0]["y"].push(3.31);
+    
+      damon[0]["x"].push('2021-02-12')
+      damon[0]["y"].push(3.57);
+    
+      damon[0]["x"].push('2021-02-13')
+      damon[0]["y"].push(3.81);
+    
+      damon[0]["x"].push('2021-02-14')
+      damon[0]["y"].push(4);
+    
+      damon[0]["x"].push('2021-02-15')
+      damon[0]["y"].push();
+    
+      damon[0]["x"].push('2021-02-16')
+      damon[0]["y"].push(4.19);
+    
+      damon[0]["x"].push('2021-02-17')
+      damon[0]["y"].push(4.31);
+    
+      damon[0]["x"].push('2021-02-18')
+      damon[0]["y"].push(4.34);
+    
+      damon[0]["x"].push('2021-02-19')
+      damon[0]["y"].push(4.59);
+    
+      damon[0]["x"].push('2021-02-20')
+      damon[0]["y"].push(4.72);
+    
+      damon[0]["x"].push('2021-02-21')
+      damon[0]["y"].push(4.83);
+    
+      damon[0]["x"].push('2021-02-22')
+      damon[0]["y"].push(4.95);
+    
+      damon[0]["x"].push('2021-02-25')
+      damon[0]["y"].push(5.51);
+    
+      damon[0]["x"].push('2021-02-26')
+      damon[0]["y"].push(5.8);
+    
+      damon[0]["x"].push('2021-02-27')
+      damon[0]["y"].push(5.96);
+    
+      damon[0]["x"].push('2021-02-28')
+      damon[0]["y"].push(6.22);
+    
+      damon[0]["x"].push('2021-03-01')
+      damon[0]["y"].push(6.22);
+    
+      damon[0]["x"].push('2021-03-02')
+      damon[0]["y"].push(6.84);
+    
+      damon[0]["x"].push('2021-03-03')
+      damon[0]["y"].push(7.24);
+    
+      damon[0]["x"].push('2021-03-04')
+      damon[0]["y"].push(7.5);
+    
+      damon[0]["x"].push('2021-03-05')
+      damon[0]["y"].push(7.71);
+    
+      damon[0]["x"].push('2021-03-06')
+      damon[0]["y"].push(7.99);
+    
+      damon[0]["x"].push('2021-03-07')
+      damon[0]["y"].push(8.11);
+    
+      damon[0]["x"].push('2021-03-08')
+      damon[0]["y"].push(8.25);
+    
+      damon[0]["x"].push('2021-03-09')
+      damon[0]["y"].push(8.49);
+    
+      damon[0]["x"].push('2021-03-10')
+      damon[0]["y"].push(8.76);
+    
+      damon[0]["x"].push('2021-03-11')
+      damon[0]["y"].push(8.96);
+    
+      damon[0]["x"].push('2021-03-12')
+      damon[0]["y"].push(9.28);
+    
+      damon[0]["x"].push('2021-03-13')
+      damon[0]["y"].push(9.58);
+    
+      damon[0]["x"].push('2021-03-14')
+      damon[0]["y"].push(9.75);
+    
+      damon[0]["x"].push('2021-03-15')
+      damon[0]["y"].push(9.89);
+    
+      damon[0]["x"].push('2021-03-16')
+      damon[0]["y"].push(9.99);
+    
+      damon[0]["x"].push('2021-03-17')
+      damon[0]["y"].push(10.14);
+    
+      damon[0]["x"].push('2021-03-18')
+      damon[0]["y"].push(10.3);
+    
+      damon[0]["x"].push('2021-03-19')
+      damon[0]["y"].push(10.46);
+    
+      damon[0]["x"].push('2021-03-20')
+      damon[0]["y"].push(10.64);
+    
+      damon[0]["x"].push('2021-03-21')
+      damon[0]["y"].push(10.84);
+    
+      damon[0]["x"].push('2021-03-22')
+      damon[0]["y"].push(11.01);
+    
+      damon[0]["x"].push('2021-03-24')
+      damon[0]["y"].push(11.16);
+    
+      damon[0]["x"].push('2021-03-25')
+      damon[0]["y"].push(11.52);
+    
+      damon[0]["x"].push('2021-03-26')
+      damon[0]["y"].push(11.88);
+    
+      damon[0]["x"].push('2021-03-27')
+      damon[0]["y"].push(12.34);
+    
+      damon[0]["x"].push('2021-03-28')
+      damon[0]["y"].push(12.71);
+    
+      damon[0]["x"].push('2021-03-29')
+      damon[0]["y"].push(12.95);
+    
+      damon[0]["x"].push('2021-03-30')
+      damon[0]["y"].push(13.32);
+    
+      damon[0]["x"].push('2021-03-31')
+      damon[0]["y"].push(13.7);
+    
+      damon[0]["x"].push('2021-04-01')
+      damon[0]["y"].push(14.32);
+    
+      damon[0]["x"].push('2021-04-02')
+      damon[0]["y"].push(14.97);
+    
+      damon[0]["x"].push('2021-04-03')
+      damon[0]["y"].push(15.36);
+    
+      damon[0]["x"].push('2021-04-04')
+      damon[0]["y"].push(15.74);
+    
+      damon[0]["x"].push('2021-04-05')
+      damon[0]["y"].push(16.11);
+    
+      damon[0]["x"].push('2021-04-06')
+      damon[0]["y"].push(16.54);
+    
+      damon[0]["x"].push('2021-04-07')
+      damon[0]["y"].push(16.94);
+    
+      damon[0]["x"].push('2021-04-08')
+      damon[0]["y"].push(17.48);
+    
+      damon[0]["x"].push('2021-04-09')
+      damon[0]["y"].push(18.16);
+    
+      damon[0]["x"].push('2021-04-10')
+      damon[0]["y"].push(18.98);
+    
+      damon[0]["x"].push('2021-04-11')
+      damon[0]["y"].push(19.49);
+    
+      damon[0]["x"].push('2021-04-12')
+      damon[0]["y"].push(19.86);
+    
+      damon[0]["x"].push('2021-04-13')
+      damon[0]["y"].push(20.24);
+    
+      damon[0]["x"].push('2021-04-14')
+      damon[0]["y"].push(20.69);
+    
+      damon[0]["x"].push('2021-04-15')
+      damon[0]["y"].push(21.24);
+    
+      damon[0]["x"].push('2021-04-16')
+      damon[0]["y"].push(21.72);
+    
+      damon[0]["x"].push('2021-04-17')
+      damon[0]["y"].push(22.1);
+    
+      damon[0]["x"].push('2021-04-18')
+      damon[0]["y"].push(22.27);
+    
+      damon[0]["x"].push('2021-04-19')
+      damon[0]["y"].push(22.63);
+    
+      damon[0]["x"].push('2021-04-20')
+      damon[0]["y"].push(22.87);
+    
+      damon[0]["x"].push('2021-04-21')
+      damon[0]["y"].push(23.23);
+    
+      damon[0]["x"].push('2021-04-22')
+      damon[0]["y"].push(23.74);
+    
+      damon[0]["x"].push('2021-04-23')
+      damon[0]["y"].push(24.22);
+    
+      damon[0]["x"].push('2021-04-24')
+      damon[0]["y"].push(24.68);
+    
+      damon[0]["x"].push('2021-04-25')
+      damon[0]["y"].push(25.06);
+    
+      damon[0]["x"].push('2021-04-26')
+      damon[0]["y"].push(25.29);
+    
+      damon[0]["x"].push('2021-04-27')
+      damon[0]["y"].push(25.54);
+    
+      damon[0]["x"].push('2021-04-28')
+      damon[0]["y"].push(25.91);
+    
+      damon[0]["x"].push('2021-04-29')
+      damon[0]["y"].push(26.4);
+    
+      damon[0]["x"].push('2021-04-30')
+      damon[0]["y"].push(26.99);
+    
+      damon[0]["x"].push('2021-05-01')
+      damon[0]["y"].push(27.46);
+    
+      damon[0]["x"].push('2021-05-02')
+      damon[0]["y"].push(27.72);
+    
+      damon[0]["x"].push('2021-05-03')
+      damon[0]["y"].push(27.87);
+    
+      damon[0]["x"].push('2021-05-04')
+      damon[0]["y"].push(28.04);
+    
+      damon[0]["x"].push('2021-05-05')
+      damon[0]["y"].push(28.44);
+    
+      damon[0]["x"].push('2021-05-06')
+      damon[0]["y"].push(28.85);
+    
+      damon[0]["x"].push('2021-05-07')
+      damon[0]["y"].push(29.34);
+    
+      damon[0]["x"].push('2021-05-08')
+      damon[0]["y"].push(29.76);
+    
+      damon[0]["x"].push('2021-05-09')
+      damon[0]["y"].push(30.15);
+    
+      damon[0]["x"].push('2021-05-10')
+      damon[0]["y"].push(30.37);
+    
+      damon[0]["x"].push('2021-05-11')
+      damon[0]["y"].push(30.61);
+    
+      damon[0]["x"].push('2021-05-12')
+      damon[0]["y"].push(30.91);
+    
+      damon[0]["x"].push('2021-05-13')
+      damon[0]["y"].push(31.24);
+    
+      damon[0]["x"].push('2021-05-14')
+      damon[0]["y"].push(31.58);
+    
+      damon[0]["x"].push('2021-05-15')
+      damon[0]["y"].push(31.95);
+    
+      damon[0]["x"].push('2021-05-16')
+      damon[0]["y"].push(32.34);
+    
+      damon[0]["x"].push('2021-05-17')
+      damon[0]["y"].push(32.61);
+    
+      damon[0]["x"].push('2021-05-18')
+      damon[0]["y"].push(32.78);
+    
+      damon[0]["x"].push('2021-05-19')
+      damon[0]["y"].push(33.06);
+    
+      damon[0]["x"].push('2021-05-20')
+      damon[0]["y"].push(33.3);
+    
+      damon[0]["x"].push('2021-05-21')
+      damon[0]["y"].push(33.64);
+    
+      damon[0]["x"].push('2021-05-22')
+      damon[0]["y"].push(33.84);
+    
+      damon[0]["x"].push('2021-05-23')
+      damon[0]["y"].push(34.07);
+    
+      damon[0]["x"].push('2021-05-24')
+      damon[0]["y"].push(34.2);
+    
+      damon[0]["x"].push('2021-05-25')
+      damon[0]["y"].push(34.37);
+    
+      damon[0]["x"].push('2021-05-26')
+      damon[0]["y"].push(34.6);
+    
+      damon[0]["x"].push('2021-05-27')
+      damon[0]["y"].push(34.79);
+    
+      damon[0]["x"].push('2021-05-28')
+      damon[0]["y"].push(35.03);
+    
+      damon[0]["x"].push('2021-05-29')
+      damon[0]["y"].push(35.26);
+    
+      damon[0]["x"].push('2021-05-30')
+      damon[0]["y"].push(35.43);
+    
+      damon[0]["x"].push('2021-05-31')
+      damon[0]["y"].push();
+    
+      damon[0]["x"].push('2021-06-01')
+      damon[0]["y"].push(35.61);
+    
+      damon[0]["x"].push('2021-06-02')
+      damon[0]["y"].push(35.71);
+    
+      damon[0]["x"].push('2021-06-03')
+      damon[0]["y"].push(35.85);
+    
+      damon[0]["x"].push('2021-06-04')
+      damon[0]["y"].push(36.07);
+    
+      damon[0]["x"].push('2021-06-05')
+      damon[0]["y"].push(36.24);
+    
+      damon[0]["x"].push('2021-06-06')
+      damon[0]["y"].push(36.5);
+    
+      damon[0]["x"].push('2021-06-07')
+      damon[0]["y"].push(36.64);
+    
+      damon[0]["x"].push('2021-06-08')
+      damon[0]["y"].push(36.77);
+    
+      damon[0]["x"].push('2021-06-09')
+      damon[0]["y"].push(36.97);
+    
+      damon[0]["x"].push('2021-06-10')
+      damon[0]["y"].push(37.2);
+    
+      damon[0]["x"].push('2021-06-11')
+      damon[0]["y"].push(37.44);
+    
+      damon[0]["x"].push('2021-06-12')
+      damon[0]["y"].push(37.79);
+    
+      damon[0]["x"].push('2021-06-13')
+      damon[0]["y"].push(37.95);
+    
+      damon[0]["x"].push('2021-06-14')
+      damon[0]["y"].push(38.08);
+    
+      damon[0]["x"].push('2021-06-15')
+      damon[0]["y"].push(38.32);
+    
+      damon[0]["x"].push('2021-06-16')
+      damon[0]["y"].push(38.72);
+    
+      damon[0]["x"].push('2021-06-17')
+      damon[0]["y"].push(39.08);
+    
+      damon[0]["x"].push('2021-06-18')
+      damon[0]["y"].push(39.3);
+    
+      damon[0]["x"].push('2021-06-19')
+      damon[0]["y"].push(39.45);
+    
+      damon[0]["x"].push('2021-06-20')
+      damon[0]["y"].push(39.66);
+    
+      damon[0]["x"].push('2021-06-21')
+      damon[0]["y"].push(39.76);
+    
+      damon[0]["x"].push('2021-06-22')
+      damon[0]["y"].push(39.86);
+    
+      damon[0]["x"].push('2021-06-23')
+      damon[0]["y"].push(39.96);
+    
+      damon[0]["x"].push('2021-06-24')
+      damon[0]["y"].push(40.1);
+    
+      damon[0]["x"].push('2021-06-25')
+      damon[0]["y"].push(40.25);
+    
+      damon[0]["x"].push('2021-06-26')
+      damon[0]["y"].push(40.49);
+    
+      damon[0]["x"].push('2021-06-27')
+      damon[0]["y"].push(40.77);
+    
+      damon[0]["x"].push('2021-06-28')
+      damon[0]["y"].push(40.91);
+    
+      damon[0]["x"].push('2021-06-29')
+      damon[0]["y"].push(41);
+    
+      damon[0]["x"].push('2021-06-30')
+      damon[0]["y"].push(41.15);
+    
+      damon[0]["x"].push('2021-07-01')
+      damon[0]["y"].push(41.3);
+    
+      damon[0]["x"].push('2021-07-02')
+      damon[0]["y"].push(41.41);
+    
+      damon[0]["x"].push('2021-07-03')
+      damon[0]["y"].push(41.52);
+    
+      damon[0]["x"].push('2021-07-04')
+      damon[0]["y"].push(41.61);
+    
+      damon[0]["x"].push('2021-07-05')
+      damon[0]["y"].push();
+    
+      damon[0]["x"].push('2021-07-06')
+      damon[0]["y"].push(41.7);
+    
+      damon[0]["x"].push('2021-07-07')
+      damon[0]["y"].push(41.76);
+    
+      damon[0]["x"].push('2021-07-08')
+      damon[0]["y"].push(41.88);
+    
+      damon[0]["x"].push('2021-07-09')
+      damon[0]["y"].push(41.96);
+    
+      damon[0]["x"].push('2021-07-10')
+      damon[0]["y"].push(42.09);
+    
+      damon[0]["x"].push('2021-07-11')
+      damon[0]["y"].push(42.18);
+    
+      damon[0]["x"].push('2021-07-12')
+      damon[0]["y"].push(42.24);
+    
+      damon[0]["x"].push('2021-07-13')
+      damon[0]["y"].push(42.33);
+    
+      damon[0]["x"].push('2021-07-14')
+      damon[0]["y"].push(42.46);
+    
+      damon[0]["x"].push('2021-07-15')
+      damon[0]["y"].push(42.56);
+    
+      damon[0]["x"].push('2021-07-16')
+      damon[0]["y"].push(42.64);
+    
+      damon[0]["x"].push('2021-07-17')
+      damon[0]["y"].push(42.73);
+    
+      damon[0]["x"].push('2021-07-18')
+      damon[0]["y"].push(42.81);
+    
+      damon[0]["x"].push('2021-07-19')
+      damon[0]["y"].push(42.86);
+    
+      damon[0]["x"].push('2021-07-20')
+      damon[0]["y"].push(42.96);
+    
+      damon[0]["x"].push('2021-07-21')
+      damon[0]["y"].push(43.06);
+    
+      damon[0]["x"].push('2021-07-22')
+      damon[0]["y"].push(43.12);
+    
+      damon[0]["x"].push('2021-07-23')
+      damon[0]["y"].push(43.2);
+    
+      damon[0]["x"].push('2021-07-24')
+      damon[0]["y"].push(43.2);
+    
+      damon[0]["x"].push('2021-07-25')
+      damon[0]["y"].push(43.37);
+    
+      damon[0]["x"].push('2021-07-26')
+      damon[0]["y"].push(43.43);
+    
+      damon[0]["x"].push('2021-07-27')
+      damon[0]["y"].push(43.49);
+    
+      damon[0]["x"].push('2021-07-28')
+      damon[0]["y"].push(43.56);
+    
+      damon[0]["x"].push('2021-07-29')
+      damon[0]["y"].push(43.65);
+    
+      damon[0]["x"].push('2021-07-30')
+      damon[0]["y"].push(43.75);
+    
+      damon[0]["x"].push('2021-07-31')
+      damon[0]["y"].push(43.84);
+    
+      damon[0]["x"].push('2021-08-01')
+      damon[0]["y"].push(43.93);
+    
+      damon[0]["x"].push('2021-08-02')
+      damon[0]["y"].push(44);
+    
+      damon[0]["x"].push('2021-08-03')
+      damon[0]["y"].push(44.1);
+    
+      damon[0]["x"].push('2021-08-04')
+      damon[0]["y"].push(44.18);
+    
+      damon[0]["x"].push('2021-08-05')
+      damon[0]["y"].push(44.27);
+    
+      damon[0]["x"].push('2021-08-06')
+      damon[0]["y"].push(44.35);
+    
+      damon[0]["x"].push('2021-08-07')
+      damon[0]["y"].push(44.44);
+    
+      damon[0]["x"].push('2021-08-08')
+      damon[0]["y"].push(44.52);
+    
+      damon[0]["x"].push('2021-08-09')
+      damon[0]["y"].push(44.58);
+    
+      damon[0]["x"].push('2021-08-10')
+      damon[0]["y"].push(44.65);
+    
+      damon[0]["x"].push('2021-08-11')
+      damon[0]["y"].push(44.72);
+    
+      damon[0]["x"].push('2021-08-12')
+      damon[0]["y"].push(44.83);
+    
+      damon[0]["x"].push('2021-08-13')
+      damon[0]["y"].push(44.97);
+    
+      damon[0]["x"].push('2021-08-14')
+      damon[0]["y"].push(45.15);
+    
+      damon[0]["x"].push('2021-08-15')
+      damon[0]["y"].push(45.27);
+    
+      damon[0]["x"].push('2021-08-16')
+      damon[0]["y"].push(45.35);
+    
+      damon[0]["x"].push('2021-08-17')
+      damon[0]["y"].push(45.45);
+    
+      damon[0]["x"].push('2021-08-18')
+      damon[0]["y"].push(45.55);
+    
+      damon[0]["x"].push('2021-08-19')
+      damon[0]["y"].push(45.71);
+    
+      damon[0]["x"].push('2021-08-20')
+      damon[0]["y"].push(45.85);
+    
+      damon[0]["x"].push('2021-08-21')
+      damon[0]["y"].push(45.97);
+    
+      damon[0]["x"].push('2021-08-22')
+      damon[0]["y"].push(46.13);
+    
+      damon[0]["x"].push('2021-08-23')
+      damon[0]["y"].push(46.24);
+    
+      damon[0]["x"].push('2021-08-24')
+      damon[0]["y"].push(46.37);
+    
+      damon[0]["x"].push('2021-08-25')
+      damon[0]["y"].push(46.57);
+    
+      damon[0]["x"].push('2021-08-26')
+      damon[0]["y"].push(46.75);
+    
+      damon[0]["x"].push('2021-08-27')
+      damon[0]["y"].push(46.89);
+    
+      damon[0]["x"].push('2021-08-28')
+      damon[0]["y"].push(47.04);
+    
+      damon[0]["x"].push('2021-08-29')
+      damon[0]["y"].push(47.2);
+    
+      damon[0]["x"].push('2021-08-30')
+      damon[0]["y"].push(47.31);
+    
+      damon[0]["x"].push('2021-08-31')
+      damon[0]["y"].push(47.43);
+    
+      damon[0]["x"].push('2021-09-01')
+      damon[0]["y"].push(47.6);
+    
+      damon[0]["x"].push('2021-09-02')
+      damon[0]["y"].push(47.75);
+    
+      damon[0]["x"].push('2021-09-03')
+      damon[0]["y"].push(47.9);
+    
+      damon[0]["x"].push('2021-09-04')
+      damon[0]["y"].push(48.06);
+    
+      damon[0]["x"].push('2021-09-05')
+      damon[0]["y"].push();
+    
+      damon[0]["x"].push('2021-09-06')
+      damon[0]["y"].push();
+    
+      damon[0]["x"].push('2021-09-07')
+      damon[0]["y"].push(48.39);
+    
+      damon[0]["x"].push('2021-09-08')
+      damon[0]["y"].push(48.46);
+    
+      damon[0]["x"].push('2021-09-09')
+      damon[0]["y"].push(48.61);
+    
+      damon[0]["x"].push('2021-09-10')
+      damon[0]["y"].push(48.74);
+    
+      damon[0]["x"].push('2021-09-11')
+      damon[0]["y"].push(48.89);
+    
+      damon[0]["x"].push('2021-09-12')
+      damon[0]["y"].push(49.04);
+    
+      damon[0]["x"].push('2021-09-13')
+      damon[0]["y"].push(49.13);
+    
+      damon[0]["x"].push('2021-09-14')
+      damon[0]["y"].push(49.24);
+    
+      damon[0]["x"].push('2021-09-15')
+      damon[0]["y"].push(49.37);
+    
+      damon[0]["x"].push('2021-09-16')
+      damon[0]["y"].push(49.49);
+    
+      damon[0]["x"].push('2021-09-17')
+      damon[0]["y"].push(49.78);
+    
+      damon[0]["x"].push('2021-09-18')
+      damon[0]["y"].push(50.05);
+    
+      damon[0]["x"].push('2021-09-19')
+      damon[0]["y"].push(50.19);
+    
+      damon[0]["x"].push('2021-09-20')
+      damon[0]["y"].push(50.26);
+    
+      damon[0]["x"].push('2021-09-21')
+      damon[0]["y"].push(50.34);
+    
+      damon[0]["x"].push('2021-09-22')
+      damon[0]["y"].push(50.5);
+    
+      damon[0]["x"].push('2021-09-29')
+      damon[0]["y"].push(51.01);
+    
+      damon[0]["x"].push('2021-09-30')
+      damon[0]["y"].push(51.09);
+    
+      damon[0]["x"].push('2021-10-01')
+      damon[0]["y"].push(51.16);
+    
+      damon[0]["x"].push('2021-10-02')
+      damon[0]["y"].push(51.29);
+    
+      damon[0]["x"].push('2021-10-03')
+      damon[0]["y"].push(51.44);
+    
+      damon[0]["x"].push('2021-10-04')
+      damon[0]["y"].push(51.51);
+    
+      damon[0]["x"].push('2021-10-05')
+      damon[0]["y"].push(51.59);
+    
+      damon[0]["x"].push('2021-10-06')
+      damon[0]["y"].push(51.65);
+    
+      damon[0]["x"].push('2021-10-07')
+      damon[0]["y"].push(51.77);
+    
+      damon[0]["x"].push('2021-10-08')
+      damon[0]["y"].push(51.85);
+    
+      damon[0]["x"].push('2021-10-09')
+      damon[0]["y"].push(51.94);
+    
+      damon[0]["x"].push('2021-10-10')
+      damon[0]["y"].push();
+    
+      damon[0]["x"].push('2021-10-11')
+      damon[0]["y"].push();
+    
+      damon[0]["x"].push('2021-10-12')
+      damon[0]["y"].push(52.11);
+    
+      damon[0]["x"].push('2021-10-13')
+      damon[0]["y"].push(52.18);
+    
+      damon[0]["x"].push('2021-10-14')
+      damon[0]["y"].push(52.26);
+    
+      damon[0]["x"].push('2021-10-15')
+      damon[0]["y"].push(52.33);
+    
+      damon[0]["x"].push('2021-10-16')
+      damon[0]["y"].push(52.41);
+    
+      damon[0]["x"].push('2021-10-17')
+      damon[0]["y"].push(52.46);
+    
+      damon[0]["x"].push('2021-10-18')
+      damon[0]["y"].push(52.5);
+    
+      damon[0]["x"].push('2021-10-19')
+      damon[0]["y"].push(52.56);
+    
+      damon[0]["x"].push('2021-10-20')
+      damon[0]["y"].push(52.62);
+    
+      damon[0]["x"].push('2021-10-21')
+      damon[0]["y"].push(52.71);
+    
+      damon[0]["x"].push('2021-10-22')
+      damon[0]["y"].push(52.81);
+    
+      damon[0]["x"].push('2021-10-23')
+      damon[0]["y"].push(52.93);
+    
+      damon[0]["x"].push('2021-10-24')
+      damon[0]["y"].push(52.97);
+    
+      damon[0]["x"].push('2021-10-25')
+      damon[0]["y"].push(53);
+    
+      damon[0]["x"].push('2021-10-26')
+      damon[0]["y"].push(53.06);
+    
+      damon[0]["x"].push('2021-10-27')
+      damon[0]["y"].push(53.13);
+    
+      damon[0]["x"].push('2021-10-28')
+      damon[0]["y"].push(53.22);
+    
+      damon[0]["x"].push('2021-10-29')
+      damon[0]["y"].push(53.29);
+    
+      damon[0]["x"].push('2021-10-30')
+      damon[0]["y"].push(53.34);
+    
+      damon[0]["x"].push('2021-10-31')
+      damon[0]["y"].push(53.39);
+    
+      damon[0]["x"].push('2021-11-01')
+      damon[0]["y"].push(53.43);
+    
+      damon[0]["x"].push('2021-11-02')
+      damon[0]["y"].push(53.46);
+    
+      damon[0]["x"].push('2021-11-03')
+      damon[0]["y"].push(53.52);
+    
+      damon[0]["x"].push('2021-11-04')
+      damon[0]["y"].push(53.57);
+    
+      damon[0]["x"].push('2021-11-05')
+      damon[0]["y"].push(53.58);
+    
+      damon[0]["x"].push('2021-11-06')
+      damon[0]["y"].push(53.63);
+    
+      damon[0]["x"].push('2021-11-07')
+      damon[0]["y"].push(53.68);
+    
+      damon[0]["x"].push('2021-11-08')
+      damon[0]["y"].push(53.73);
+    
+      damon[0]["x"].push('2021-11-09')
+      damon[0]["y"].push(53.76);
+    
+      damon[0]["x"].push('2021-11-10')
+      damon[0]["y"].push(53.83);
+    
+      damon[0]["x"].push('2021-11-11')
+      damon[0]["y"].push();
+    
+      damon[0]["x"].push('2021-11-12')
+      damon[0]["y"].push(53.94);
+    
+      damon[0]["x"].push('2021-11-13')
+      damon[0]["y"].push(54.02);
+    
+      damon[0]["x"].push('2021-11-14')
+      damon[0]["y"].push(54.05);
+    
+    let layout = {
+      width: 600,
+      height:400,
+      title: 'Texas: People Fully Vaccinated Per Hundred vs. Time',
+      xaxis:{
+        title: "Time"
+      },
+      yaxis:{
+        title: "People Fully Vaccinated Per Hundred",
+        range: [0, 70]
+      }
+    };
+    Plotly.newPlot(document.getElementById("micro1"), damon, layout);
+  </script>
+
+
   <section id="vaccine-table">
     <table>
       <tr>
