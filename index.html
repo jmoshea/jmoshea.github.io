@@ -81,21 +81,151 @@
 
   <div id="map"></div>
   <script>
-    let data = [{
-      type: "choroplethmapbox", locations: ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"], z: [141, 140, 155, 147, 132, 146, 151, 137, 146, 136, 145, 141, 149, 151, 138, 158, 164, 141, 146, 145, 142, 150, 155, 160, 156, 161, 147, 164, 150, 152, 155, 167, 145, 146, 151, 154, 161, 145, 155, 150, 151, 162, 172, 169, 170, 151, 152, 173, 160, 176],
+    let vax_per_hundred = [];
+    
+      vax_per_hundred.push(45.45);
+    
+      vax_per_hundred.push(53.46);
+    
+      vax_per_hundred.push(65.86);
+    
+      vax_per_hundred.push(53.92);
+    
+      vax_per_hundred.push(48.73);
+    
+      vax_per_hundred.push();
+    
+      vax_per_hundred.push(62.2);
+    
+      vax_per_hundred.push(62.39);
+    
+      vax_per_hundred.push(71.38);
+    
+      vax_per_hundred.push(60.52);
+    
+      vax_per_hundred.push();
+    
+      vax_per_hundred.push(63.47);
+    
+      vax_per_hundred.push(40.61);
+    
+      vax_per_hundred.push(60.53);
+    
+      vax_per_hundred.push(48.8);
+    
+      vax_per_hundred.push(72.55);
+    
+      vax_per_hundred.push(60.36);
+    
+      vax_per_hundred.push(44.61);
+    
+      vax_per_hundred.push(61.41);
+    
+      vax_per_hundred.push(37.41);
+    
+      vax_per_hundred.push(50.23);
+    
+      vax_per_hundred.push(56.12);
+    
+      vax_per_hundred.push(53.93);
+    
+      vax_per_hundred.push(51.47);
+    
+      vax_per_hundred.push();
+    
+      vax_per_hundred.push(48.29);
+    
+      vax_per_hundred.push(71.45);
+    
+      vax_per_hundred.push(27.67);
+    
+      vax_per_hundred.push(66.68);
+    
+      vax_per_hundred.push(70.39);
+    
+      vax_per_hundred.push(54.07);
+    
+      vax_per_hundred.push(61.85);
+    
+      vax_per_hundred.push(46.4);
+    
+      vax_per_hundred.push(50.43);
+    
+      vax_per_hundred.push(51.19);
+    
+      vax_per_hundred.push(56.8);
+    
+      vax_per_hundred.push(53.77);
+    
+      vax_per_hundred.push(63.54);
+    
+      vax_per_hundred.push(67.09);
+    
+      vax_per_hundred.push(62.87);
+    
+      vax_per_hundred.push(67.61);
+    
+      vax_per_hundred.push(53.48);
+    
+      vax_per_hundred.push(48.17);
+    
+      vax_per_hundred.push(67.84);
+    
+      vax_per_hundred.push(52.42);
+    
+      vax_per_hundred.push(50.87);
+    
+      vax_per_hundred.push(63.46);
+    
+      vax_per_hundred.push(61.64);
+    
+      vax_per_hundred.push(74.18);
+    
+      vax_per_hundred.push(73.14);
+    
+      vax_per_hundred.push(71.7);
+    
+      vax_per_hundred.push(50.73);
+    
+      vax_per_hundred.push(53.68);
+    
+      vax_per_hundred.push(48.84);
+    
+      vax_per_hundred.push(54.05);
+    
+      vax_per_hundred.push(58.77);
+    
+      vax_per_hundred.push(54.5);
+    
+      vax_per_hundred.push(72.04);
+    
+      vax_per_hundred.push();
+    
+      vax_per_hundred.push(47);
+    
+      vax_per_hundred.push(64.01);
+    
+      vax_per_hundred.push(64.21);
+    
+      vax_per_hundred.push(41.17);
+    
+      vax_per_hundred.push(58.95);
+    
+      vax_per_hundred.push(44.79);
+    
+    var map_data = [{
+      type: "choroplethmapbox", locations: ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"], z: vax_per_hundred,
       geojson: "https://raw.githubusercontent.com/python-visualization/folium/master/examples/data/us-states.json"
     }];
     var layout = {mapbox: {center: {lon: -74, lat: 43}, zoom: 3.5},
               width: 1200, height:800};
     var config = {mapboxAccessToken: "pk.eyJ1Ijoiam1vc2hlYSIsImEiOiJja3dqdWtoeHExbHppMnVxdDFid2hlbTY0In0.SjUkWcStRszcRlyIYKWkSw"};
-    Plotly.newPlot('map', data, layout, config);
+    Plotly.newPlot('map', map_data, layout, config);
   </script>
-
   <footer class="container">
   <p class="text-center">We would like to thank Our World in Data for access to their <a href="https://github.com/owid/covid-19-data/tree/master/public/data/vaccinations">dataset<a>. Our project examines and provides a visual representation of vaccination rates and total vaccinations across the United States at both a country and state level.</p>
   <p class="text-right">&copy; 2021-2022 <a href="https://www.trinityschoolnyc.org">Trinity School NYC</a></p>
 </footer>
-
 
 </body>
 
