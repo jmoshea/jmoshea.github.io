@@ -91,19 +91,960 @@
     <h1>Florida</h1>
     <h2>Fully Vaccinated People Over Time</h2>
   </header>
+
+  <div id="line_graph"></div>
+  <script>
+    let line_graph_data = [
+      {
+        x:[],
+        y:[],
+        type: 'scatter'
+      }
+    ];
+    
+      line_graph_data[0]["x"].push('2021-01-12');
+      line_graph_data[0]["y"].push(0.19);
+    
+      line_graph_data[0]["x"].push('2021-01-13');
+      line_graph_data[0]["y"].push(0.25);
+    
+      line_graph_data[0]["x"].push('2021-01-14');
+      line_graph_data[0]["y"].push();
+    
+      line_graph_data[0]["x"].push('2021-01-15');
+      line_graph_data[0]["y"].push(0.35);
+    
+      line_graph_data[0]["x"].push('2021-01-16');
+      line_graph_data[0]["y"].push();
+    
+      line_graph_data[0]["x"].push('2021-01-17');
+      line_graph_data[0]["y"].push();
+    
+      line_graph_data[0]["x"].push('2021-01-18');
+      line_graph_data[0]["y"].push();
+    
+      line_graph_data[0]["x"].push('2021-01-19');
+      line_graph_data[0]["y"].push(0.48);
+    
+      line_graph_data[0]["x"].push('2021-01-20');
+      line_graph_data[0]["y"].push(0.52);
+    
+      line_graph_data[0]["x"].push('2021-01-21');
+      line_graph_data[0]["y"].push(0.52);
+    
+      line_graph_data[0]["x"].push('2021-01-22');
+      line_graph_data[0]["y"].push(0.58);
+    
+      line_graph_data[0]["x"].push('2021-01-23');
+      line_graph_data[0]["y"].push(0.71);
+    
+      line_graph_data[0]["x"].push('2021-01-25');
+      line_graph_data[0]["y"].push(0.73);
+    
+      line_graph_data[0]["x"].push('2021-01-26');
+      line_graph_data[0]["y"].push(0.74);
+    
+      line_graph_data[0]["x"].push('2021-01-27');
+      line_graph_data[0]["y"].push(0.82);
+    
+      line_graph_data[0]["x"].push('2021-01-28');
+      line_graph_data[0]["y"].push(0.95);
+    
+      line_graph_data[0]["x"].push('2021-01-29');
+      line_graph_data[0]["y"].push(1.1);
+    
+      line_graph_data[0]["x"].push('2021-01-30');
+      line_graph_data[0]["y"].push(1.28);
+    
+      line_graph_data[0]["x"].push('2021-01-31');
+      line_graph_data[0]["y"].push(1.39);
+    
+      line_graph_data[0]["x"].push('2021-02-01');
+      line_graph_data[0]["y"].push(1.47);
+    
+      line_graph_data[0]["x"].push('2021-02-02');
+      line_graph_data[0]["y"].push(1.53);
+    
+      line_graph_data[0]["x"].push('2021-02-03');
+      line_graph_data[0]["y"].push(1.74);
+    
+      line_graph_data[0]["x"].push('2021-02-04');
+      line_graph_data[0]["y"].push(1.97);
+    
+      line_graph_data[0]["x"].push('2021-02-05');
+      line_graph_data[0]["y"].push(2.05);
+    
+      line_graph_data[0]["x"].push('2021-02-06');
+      line_graph_data[0]["y"].push(2.38);
+    
+      line_graph_data[0]["x"].push('2021-02-07');
+      line_graph_data[0]["y"].push(2.93);
+    
+      line_graph_data[0]["x"].push('2021-02-08');
+      line_graph_data[0]["y"].push(2.93);
+    
+      line_graph_data[0]["x"].push('2021-02-09');
+      line_graph_data[0]["y"].push(3.23);
+    
+      line_graph_data[0]["x"].push('2021-02-10');
+      line_graph_data[0]["y"].push(3.52);
+    
+      line_graph_data[0]["x"].push('2021-02-11');
+      line_graph_data[0]["y"].push(3.83);
+    
+      line_graph_data[0]["x"].push('2021-02-12');
+      line_graph_data[0]["y"].push(4.48);
+    
+      line_graph_data[0]["x"].push('2021-02-13');
+      line_graph_data[0]["y"].push(4.79);
+    
+      line_graph_data[0]["x"].push('2021-02-14');
+      line_graph_data[0]["y"].push(5.04);
+    
+      line_graph_data[0]["x"].push('2021-02-15');
+      line_graph_data[0]["y"].push();
+    
+      line_graph_data[0]["x"].push('2021-02-16');
+      line_graph_data[0]["y"].push(5.28);
+    
+      line_graph_data[0]["x"].push('2021-02-17');
+      line_graph_data[0]["y"].push(5.5);
+    
+      line_graph_data[0]["x"].push('2021-02-18');
+      line_graph_data[0]["y"].push(5.73);
+    
+      line_graph_data[0]["x"].push('2021-02-19');
+      line_graph_data[0]["y"].push(6.42);
+    
+      line_graph_data[0]["x"].push('2021-02-20');
+      line_graph_data[0]["y"].push(6.44);
+    
+      line_graph_data[0]["x"].push('2021-02-22');
+      line_graph_data[0]["y"].push(6.8);
+    
+      line_graph_data[0]["x"].push('2021-02-23');
+      line_graph_data[0]["y"].push(6.85);
+    
+      line_graph_data[0]["x"].push('2021-02-24');
+      line_graph_data[0]["y"].push(7.04);
+    
+      line_graph_data[0]["x"].push('2021-02-25');
+      line_graph_data[0]["y"].push(7.3);
+    
+      line_graph_data[0]["x"].push('2021-02-26');
+      line_graph_data[0]["y"].push(7.53);
+    
+      line_graph_data[0]["x"].push('2021-02-27');
+      line_graph_data[0]["y"].push(7.77);
+    
+      line_graph_data[0]["x"].push('2021-02-28');
+      line_graph_data[0]["y"].push(8.2);
+    
+      line_graph_data[0]["x"].push('2021-03-01');
+      line_graph_data[0]["y"].push(8.2);
+    
+      line_graph_data[0]["x"].push('2021-03-02');
+      line_graph_data[0]["y"].push(8.26);
+    
+      line_graph_data[0]["x"].push('2021-03-03');
+      line_graph_data[0]["y"].push(8.42);
+    
+      line_graph_data[0]["x"].push('2021-03-04');
+      line_graph_data[0]["y"].push(8.66);
+    
+      line_graph_data[0]["x"].push('2021-03-05');
+      line_graph_data[0]["y"].push(8.86);
+    
+      line_graph_data[0]["x"].push('2021-03-06');
+      line_graph_data[0]["y"].push(9.21);
+    
+      line_graph_data[0]["x"].push('2021-03-07');
+      line_graph_data[0]["y"].push(9.52);
+    
+      line_graph_data[0]["x"].push('2021-03-08');
+      line_graph_data[0]["y"].push(9.57);
+    
+      line_graph_data[0]["x"].push('2021-03-09');
+      line_graph_data[0]["y"].push(9.66);
+    
+      line_graph_data[0]["x"].push('2021-03-10');
+      line_graph_data[0]["y"].push(9.83);
+    
+      line_graph_data[0]["x"].push('2021-03-11');
+      line_graph_data[0]["y"].push(10.15);
+    
+      line_graph_data[0]["x"].push('2021-03-12');
+      line_graph_data[0]["y"].push(10.44);
+    
+      line_graph_data[0]["x"].push('2021-03-13');
+      line_graph_data[0]["y"].push(11.17);
+    
+      line_graph_data[0]["x"].push('2021-03-14');
+      line_graph_data[0]["y"].push(11.39);
+    
+      line_graph_data[0]["x"].push('2021-03-15');
+      line_graph_data[0]["y"].push(11.42);
+    
+      line_graph_data[0]["x"].push('2021-03-16');
+      line_graph_data[0]["y"].push(11.63);
+    
+      line_graph_data[0]["x"].push('2021-03-17');
+      line_graph_data[0]["y"].push(11.93);
+    
+      line_graph_data[0]["x"].push('2021-03-18');
+      line_graph_data[0]["y"].push(12.25);
+    
+      line_graph_data[0]["x"].push('2021-03-19');
+      line_graph_data[0]["y"].push(12.53);
+    
+      line_graph_data[0]["x"].push('2021-03-20');
+      line_graph_data[0]["y"].push(12.98);
+    
+      line_graph_data[0]["x"].push('2021-03-21');
+      line_graph_data[0]["y"].push(13.3);
+    
+      line_graph_data[0]["x"].push('2021-03-22');
+      line_graph_data[0]["y"].push(13.31);
+    
+      line_graph_data[0]["x"].push('2021-03-23');
+      line_graph_data[0]["y"].push(13.44);
+    
+      line_graph_data[0]["x"].push('2021-03-24');
+      line_graph_data[0]["y"].push(13.68);
+    
+      line_graph_data[0]["x"].push('2021-03-25');
+      line_graph_data[0]["y"].push(13.98);
+    
+      line_graph_data[0]["x"].push('2021-03-26');
+      line_graph_data[0]["y"].push(14.3);
+    
+      line_graph_data[0]["x"].push('2021-03-27');
+      line_graph_data[0]["y"].push(14.72);
+    
+      line_graph_data[0]["x"].push('2021-03-28');
+      line_graph_data[0]["y"].push(15.12);
+    
+      line_graph_data[0]["x"].push('2021-03-29');
+      line_graph_data[0]["y"].push(15.14);
+    
+      line_graph_data[0]["x"].push('2021-03-30');
+      line_graph_data[0]["y"].push(15.43);
+    
+      line_graph_data[0]["x"].push('2021-03-31');
+      line_graph_data[0]["y"].push(15.76);
+    
+      line_graph_data[0]["x"].push('2021-04-01');
+      line_graph_data[0]["y"].push(16.25);
+    
+      line_graph_data[0]["x"].push('2021-04-02');
+      line_graph_data[0]["y"].push(16.7);
+    
+      line_graph_data[0]["x"].push('2021-04-03');
+      line_graph_data[0]["y"].push(17.19);
+    
+      line_graph_data[0]["x"].push('2021-04-04');
+      line_graph_data[0]["y"].push(17.94);
+    
+      line_graph_data[0]["x"].push('2021-04-05');
+      line_graph_data[0]["y"].push(17.95);
+    
+      line_graph_data[0]["x"].push('2021-04-06');
+      line_graph_data[0]["y"].push(18.06);
+    
+      line_graph_data[0]["x"].push('2021-04-07');
+      line_graph_data[0]["y"].push(18.46);
+    
+      line_graph_data[0]["x"].push('2021-04-08');
+      line_graph_data[0]["y"].push(19.14);
+    
+      line_graph_data[0]["x"].push('2021-04-09');
+      line_graph_data[0]["y"].push(19.8);
+    
+      line_graph_data[0]["x"].push('2021-04-10');
+      line_graph_data[0]["y"].push(20.45);
+    
+      line_graph_data[0]["x"].push('2021-04-11');
+      line_graph_data[0]["y"].push(21.07);
+    
+      line_graph_data[0]["x"].push('2021-04-12');
+      line_graph_data[0]["y"].push(21.44);
+    
+      line_graph_data[0]["x"].push('2021-04-13');
+      line_graph_data[0]["y"].push(21.66);
+    
+      line_graph_data[0]["x"].push('2021-04-14');
+      line_graph_data[0]["y"].push(21.91);
+    
+      line_graph_data[0]["x"].push('2021-04-15');
+      line_graph_data[0]["y"].push(22.44);
+    
+      line_graph_data[0]["x"].push('2021-04-16');
+      line_graph_data[0]["y"].push(22.91);
+    
+      line_graph_data[0]["x"].push('2021-04-17');
+      line_graph_data[0]["y"].push(23.52);
+    
+      line_graph_data[0]["x"].push('2021-04-18');
+      line_graph_data[0]["y"].push(24.31);
+    
+      line_graph_data[0]["x"].push('2021-04-19');
+      line_graph_data[0]["y"].push(24.32);
+    
+      line_graph_data[0]["x"].push('2021-04-20');
+      line_graph_data[0]["y"].push(24.47);
+    
+      line_graph_data[0]["x"].push('2021-04-21');
+      line_graph_data[0]["y"].push(24.88);
+    
+      line_graph_data[0]["x"].push('2021-04-22');
+      line_graph_data[0]["y"].push(25.41);
+    
+      line_graph_data[0]["x"].push('2021-04-23');
+      line_graph_data[0]["y"].push(25.98);
+    
+      line_graph_data[0]["x"].push('2021-04-24');
+      line_graph_data[0]["y"].push(26.54);
+    
+      line_graph_data[0]["x"].push('2021-04-25');
+      line_graph_data[0]["y"].push(27.15);
+    
+      line_graph_data[0]["x"].push('2021-04-26');
+      line_graph_data[0]["y"].push(27.5);
+    
+      line_graph_data[0]["x"].push('2021-04-27');
+      line_graph_data[0]["y"].push(27.69);
+    
+      line_graph_data[0]["x"].push('2021-04-28');
+      line_graph_data[0]["y"].push(28.09);
+    
+      line_graph_data[0]["x"].push('2021-04-29');
+      line_graph_data[0]["y"].push(28.57);
+    
+      line_graph_data[0]["x"].push('2021-04-30');
+      line_graph_data[0]["y"].push(28.98);
+    
+      line_graph_data[0]["x"].push('2021-05-01');
+      line_graph_data[0]["y"].push(29.85);
+    
+      line_graph_data[0]["x"].push('2021-05-02');
+      line_graph_data[0]["y"].push(29.86);
+    
+      line_graph_data[0]["x"].push('2021-05-03');
+      line_graph_data[0]["y"].push(30.08);
+    
+      line_graph_data[0]["x"].push('2021-05-04');
+      line_graph_data[0]["y"].push(30.18);
+    
+      line_graph_data[0]["x"].push('2021-05-05');
+      line_graph_data[0]["y"].push(30.51);
+    
+      line_graph_data[0]["x"].push('2021-05-06');
+      line_graph_data[0]["y"].push(31.03);
+    
+      line_graph_data[0]["x"].push('2021-05-07');
+      line_graph_data[0]["y"].push(31.62);
+    
+      line_graph_data[0]["x"].push('2021-05-08');
+      line_graph_data[0]["y"].push(32.1);
+    
+      line_graph_data[0]["x"].push('2021-05-09');
+      line_graph_data[0]["y"].push(32.68);
+    
+      line_graph_data[0]["x"].push('2021-05-10');
+      line_graph_data[0]["y"].push(33.2);
+    
+      line_graph_data[0]["x"].push('2021-05-11');
+      line_graph_data[0]["y"].push(33.5);
+    
+      line_graph_data[0]["x"].push('2021-05-12');
+      line_graph_data[0]["y"].push(33.82);
+    
+      line_graph_data[0]["x"].push('2021-05-13');
+      line_graph_data[0]["y"].push(34.27);
+    
+      line_graph_data[0]["x"].push('2021-05-14');
+      line_graph_data[0]["y"].push(34.63);
+    
+      line_graph_data[0]["x"].push('2021-05-15');
+      line_graph_data[0]["y"].push(35.42);
+    
+      line_graph_data[0]["x"].push('2021-05-16');
+      line_graph_data[0]["y"].push(35.43);
+    
+      line_graph_data[0]["x"].push('2021-05-17');
+      line_graph_data[0]["y"].push(35.7);
+    
+      line_graph_data[0]["x"].push('2021-05-18');
+      line_graph_data[0]["y"].push(35.89);
+    
+      line_graph_data[0]["x"].push('2021-05-19');
+      line_graph_data[0]["y"].push(36.15);
+    
+      line_graph_data[0]["x"].push('2021-05-20');
+      line_graph_data[0]["y"].push(36.51);
+    
+      line_graph_data[0]["x"].push('2021-05-21');
+      line_graph_data[0]["y"].push(36.81);
+    
+      line_graph_data[0]["x"].push('2021-05-22');
+      line_graph_data[0]["y"].push(37.18);
+    
+      line_graph_data[0]["x"].push('2021-05-23');
+      line_graph_data[0]["y"].push(37.41);
+    
+      line_graph_data[0]["x"].push('2021-05-24');
+      line_graph_data[0]["y"].push(37.61);
+    
+      line_graph_data[0]["x"].push('2021-05-25');
+      line_graph_data[0]["y"].push(37.75);
+    
+      line_graph_data[0]["x"].push('2021-05-26');
+      line_graph_data[0]["y"].push(37.96);
+    
+      line_graph_data[0]["x"].push('2021-05-27');
+      line_graph_data[0]["y"].push(38.2);
+    
+      line_graph_data[0]["x"].push('2021-05-28');
+      line_graph_data[0]["y"].push(38.43);
+    
+      line_graph_data[0]["x"].push('2021-05-29');
+      line_graph_data[0]["y"].push(38.66);
+    
+      line_graph_data[0]["x"].push('2021-05-30');
+      line_graph_data[0]["y"].push(38.88);
+    
+      line_graph_data[0]["x"].push('2021-05-31');
+      line_graph_data[0]["y"].push();
+    
+      line_graph_data[0]["x"].push('2021-06-01');
+      line_graph_data[0]["y"].push(39.18);
+    
+      line_graph_data[0]["x"].push('2021-06-02');
+      line_graph_data[0]["y"].push(39.29);
+    
+      line_graph_data[0]["x"].push('2021-06-03');
+      line_graph_data[0]["y"].push(39.43);
+    
+      line_graph_data[0]["x"].push('2021-06-04');
+      line_graph_data[0]["y"].push(39.62);
+    
+      line_graph_data[0]["x"].push('2021-06-05');
+      line_graph_data[0]["y"].push(39.86);
+    
+      line_graph_data[0]["x"].push('2021-06-06');
+      line_graph_data[0]["y"].push(40.08);
+    
+      line_graph_data[0]["x"].push('2021-06-07');
+      line_graph_data[0]["y"].push(40.31);
+    
+      line_graph_data[0]["x"].push('2021-06-08');
+      line_graph_data[0]["y"].push(40.49);
+    
+      line_graph_data[0]["x"].push('2021-06-09');
+      line_graph_data[0]["y"].push(40.72);
+    
+      line_graph_data[0]["x"].push('2021-06-10');
+      line_graph_data[0]["y"].push(41.04);
+    
+      line_graph_data[0]["x"].push('2021-06-11');
+      line_graph_data[0]["y"].push(41.04);
+    
+      line_graph_data[0]["x"].push('2021-06-12');
+      line_graph_data[0]["y"].push(41.43);
+    
+      line_graph_data[0]["x"].push('2021-06-13');
+      line_graph_data[0]["y"].push(41.67);
+    
+      line_graph_data[0]["x"].push('2021-06-14');
+      line_graph_data[0]["y"].push(42.44);
+    
+      line_graph_data[0]["x"].push('2021-06-15');
+      line_graph_data[0]["y"].push(42.69);
+    
+      line_graph_data[0]["x"].push('2021-06-16');
+      line_graph_data[0]["y"].push(42.7);
+    
+      line_graph_data[0]["x"].push('2021-06-17');
+      line_graph_data[0]["y"].push(43.31);
+    
+      line_graph_data[0]["x"].push('2021-06-18');
+      line_graph_data[0]["y"].push(43.53);
+    
+      line_graph_data[0]["x"].push('2021-06-19');
+      line_graph_data[0]["y"].push(43.76);
+    
+      line_graph_data[0]["x"].push('2021-06-20');
+      line_graph_data[0]["y"].push(44.09);
+    
+      line_graph_data[0]["x"].push('2021-06-21');
+      line_graph_data[0]["y"].push(44.09);
+    
+      line_graph_data[0]["x"].push('2021-06-22');
+      line_graph_data[0]["y"].push(44.2);
+    
+      line_graph_data[0]["x"].push('2021-06-23');
+      line_graph_data[0]["y"].push(44.31);
+    
+      line_graph_data[0]["x"].push('2021-06-24');
+      line_graph_data[0]["y"].push(44.44);
+    
+      line_graph_data[0]["x"].push('2021-06-25');
+      line_graph_data[0]["y"].push(44.68);
+    
+      line_graph_data[0]["x"].push('2021-06-26');
+      line_graph_data[0]["y"].push(44.86);
+    
+      line_graph_data[0]["x"].push('2021-06-27');
+      line_graph_data[0]["y"].push(44.86);
+    
+      line_graph_data[0]["x"].push('2021-06-28');
+      line_graph_data[0]["y"].push(45.61);
+    
+      line_graph_data[0]["x"].push('2021-06-29');
+      line_graph_data[0]["y"].push(45.7);
+    
+      line_graph_data[0]["x"].push('2021-06-30');
+      line_graph_data[0]["y"].push(45.83);
+    
+      line_graph_data[0]["x"].push('2021-07-01');
+      line_graph_data[0]["y"].push(45.95);
+    
+      line_graph_data[0]["x"].push('2021-07-02');
+      line_graph_data[0]["y"].push(46.09);
+    
+      line_graph_data[0]["x"].push('2021-07-03');
+      line_graph_data[0]["y"].push(46.2);
+    
+      line_graph_data[0]["x"].push('2021-07-04');
+      line_graph_data[0]["y"].push(46.41);
+    
+      line_graph_data[0]["x"].push('2021-07-05');
+      line_graph_data[0]["y"].push();
+    
+      line_graph_data[0]["x"].push('2021-07-06');
+      line_graph_data[0]["y"].push(46.48);
+    
+      line_graph_data[0]["x"].push('2021-07-07');
+      line_graph_data[0]["y"].push(46.52);
+    
+      line_graph_data[0]["x"].push('2021-07-08');
+      line_graph_data[0]["y"].push(46.63);
+    
+      line_graph_data[0]["x"].push('2021-07-09');
+      line_graph_data[0]["y"].push(46.74);
+    
+      line_graph_data[0]["x"].push('2021-07-10');
+      line_graph_data[0]["y"].push(46.86);
+    
+      line_graph_data[0]["x"].push('2021-07-11');
+      line_graph_data[0]["y"].push(46.96);
+    
+      line_graph_data[0]["x"].push('2021-07-12');
+      line_graph_data[0]["y"].push(47.07);
+    
+      line_graph_data[0]["x"].push('2021-07-13');
+      line_graph_data[0]["y"].push(47.14);
+    
+      line_graph_data[0]["x"].push('2021-07-14');
+      line_graph_data[0]["y"].push(47.22);
+    
+      line_graph_data[0]["x"].push('2021-07-15');
+      line_graph_data[0]["y"].push(47.33);
+    
+      line_graph_data[0]["x"].push('2021-07-16');
+      line_graph_data[0]["y"].push(47.34);
+    
+      line_graph_data[0]["x"].push('2021-07-17');
+      line_graph_data[0]["y"].push(47.59);
+    
+      line_graph_data[0]["x"].push('2021-07-18');
+      line_graph_data[0]["y"].push(47.68);
+    
+      line_graph_data[0]["x"].push('2021-07-19');
+      line_graph_data[0]["y"].push(47.77);
+    
+      line_graph_data[0]["x"].push('2021-07-20');
+      line_graph_data[0]["y"].push(47.85);
+    
+      line_graph_data[0]["x"].push('2021-07-21');
+      line_graph_data[0]["y"].push(47.94);
+    
+      line_graph_data[0]["x"].push('2021-07-22');
+      line_graph_data[0]["y"].push(48.05);
+    
+      line_graph_data[0]["x"].push('2021-07-23');
+      line_graph_data[0]["y"].push(48.15);
+    
+      line_graph_data[0]["x"].push('2021-07-24');
+      line_graph_data[0]["y"].push(48.23);
+    
+      line_graph_data[0]["x"].push('2021-07-25');
+      line_graph_data[0]["y"].push(48.46);
+    
+      line_graph_data[0]["x"].push('2021-07-26');
+      line_graph_data[0]["y"].push(48.46);
+    
+      line_graph_data[0]["x"].push('2021-07-27');
+      line_graph_data[0]["y"].push(48.53);
+    
+      line_graph_data[0]["x"].push('2021-07-28');
+      line_graph_data[0]["y"].push(48.59);
+    
+      line_graph_data[0]["x"].push('2021-07-29');
+      line_graph_data[0]["y"].push(48.68);
+    
+      line_graph_data[0]["x"].push('2021-07-30');
+      line_graph_data[0]["y"].push(48.77);
+    
+      line_graph_data[0]["x"].push('2021-07-31');
+      line_graph_data[0]["y"].push(48.87);
+    
+      line_graph_data[0]["x"].push('2021-08-01');
+      line_graph_data[0]["y"].push(48.97);
+    
+      line_graph_data[0]["x"].push('2021-08-02');
+      line_graph_data[0]["y"].push(49.05);
+    
+      line_graph_data[0]["x"].push('2021-08-03');
+      line_graph_data[0]["y"].push(49.13);
+    
+      line_graph_data[0]["x"].push('2021-08-04');
+      line_graph_data[0]["y"].push(49.2);
+    
+      line_graph_data[0]["x"].push('2021-08-05');
+      line_graph_data[0]["y"].push(49.3);
+    
+      line_graph_data[0]["x"].push('2021-08-06');
+      line_graph_data[0]["y"].push(49.4);
+    
+      line_graph_data[0]["x"].push('2021-08-07');
+      line_graph_data[0]["y"].push(49.5);
+    
+      line_graph_data[0]["x"].push('2021-08-08');
+      line_graph_data[0]["y"].push(49.59);
+    
+      line_graph_data[0]["x"].push('2021-08-09');
+      line_graph_data[0]["y"].push(49.68);
+    
+      line_graph_data[0]["x"].push('2021-08-10');
+      line_graph_data[0]["y"].push(49.75);
+    
+      line_graph_data[0]["x"].push('2021-08-11');
+      line_graph_data[0]["y"].push(49.84);
+    
+      line_graph_data[0]["x"].push('2021-08-12');
+      line_graph_data[0]["y"].push(49.92);
+    
+      line_graph_data[0]["x"].push('2021-08-13');
+      line_graph_data[0]["y"].push(50.04);
+    
+      line_graph_data[0]["x"].push('2021-08-14');
+      line_graph_data[0]["y"].push(50.19);
+    
+      line_graph_data[0]["x"].push('2021-08-15');
+      line_graph_data[0]["y"].push(50.35);
+    
+      line_graph_data[0]["x"].push('2021-08-16');
+      line_graph_data[0]["y"].push(50.48);
+    
+      line_graph_data[0]["x"].push('2021-08-17');
+      line_graph_data[0]["y"].push(50.58);
+    
+      line_graph_data[0]["x"].push('2021-08-18');
+      line_graph_data[0]["y"].push(50.71);
+    
+      line_graph_data[0]["x"].push('2021-08-19');
+      line_graph_data[0]["y"].push(50.87);
+    
+      line_graph_data[0]["x"].push('2021-08-20');
+      line_graph_data[0]["y"].push(51.04);
+    
+      line_graph_data[0]["x"].push('2021-08-21');
+      line_graph_data[0]["y"].push(51.21);
+    
+      line_graph_data[0]["x"].push('2021-08-22');
+      line_graph_data[0]["y"].push(51.56);
+    
+      line_graph_data[0]["x"].push('2021-08-23');
+      line_graph_data[0]["y"].push(51.56);
+    
+      line_graph_data[0]["x"].push('2021-08-24');
+      line_graph_data[0]["y"].push(51.69);
+    
+      line_graph_data[0]["x"].push('2021-08-25');
+      line_graph_data[0]["y"].push(51.86);
+    
+      line_graph_data[0]["x"].push('2021-08-26');
+      line_graph_data[0]["y"].push(51.86);
+    
+      line_graph_data[0]["x"].push('2021-08-27');
+      line_graph_data[0]["y"].push(52.24);
+    
+      line_graph_data[0]["x"].push('2021-08-28');
+      line_graph_data[0]["y"].push(52.44);
+    
+      line_graph_data[0]["x"].push('2021-08-29');
+      line_graph_data[0]["y"].push(52.64);
+    
+      line_graph_data[0]["x"].push('2021-08-30');
+      line_graph_data[0]["y"].push(52.85);
+    
+      line_graph_data[0]["x"].push('2021-08-31');
+      line_graph_data[0]["y"].push(53);
+    
+      line_graph_data[0]["x"].push('2021-09-01');
+      line_graph_data[0]["y"].push(53.19);
+    
+      line_graph_data[0]["x"].push('2021-09-02');
+      line_graph_data[0]["y"].push(53.4);
+    
+      line_graph_data[0]["x"].push('2021-09-03');
+      line_graph_data[0]["y"].push(53.58);
+    
+      line_graph_data[0]["x"].push('2021-09-04');
+      line_graph_data[0]["y"].push(53.76);
+    
+      line_graph_data[0]["x"].push('2021-09-05');
+      line_graph_data[0]["y"].push();
+    
+      line_graph_data[0]["x"].push('2021-09-06');
+      line_graph_data[0]["y"].push();
+    
+      line_graph_data[0]["x"].push('2021-09-07');
+      line_graph_data[0]["y"].push(53.77);
+    
+      line_graph_data[0]["x"].push('2021-09-08');
+      line_graph_data[0]["y"].push(54.35);
+    
+      line_graph_data[0]["x"].push('2021-09-09');
+      line_graph_data[0]["y"].push(54.43);
+    
+      line_graph_data[0]["x"].push('2021-09-10');
+      line_graph_data[0]["y"].push(54.65);
+    
+      line_graph_data[0]["x"].push('2021-09-11');
+      line_graph_data[0]["y"].push(54.81);
+    
+      line_graph_data[0]["x"].push('2021-09-12');
+      line_graph_data[0]["y"].push(54.98);
+    
+      line_graph_data[0]["x"].push('2021-09-13');
+      line_graph_data[0]["y"].push(55.15);
+    
+      line_graph_data[0]["x"].push('2021-09-14');
+      line_graph_data[0]["y"].push(55.28);
+    
+      line_graph_data[0]["x"].push('2021-09-15');
+      line_graph_data[0]["y"].push(55.41);
+    
+      line_graph_data[0]["x"].push('2021-09-16');
+      line_graph_data[0]["y"].push(55.57);
+    
+      line_graph_data[0]["x"].push('2021-09-17');
+      line_graph_data[0]["y"].push(55.71);
+    
+      line_graph_data[0]["x"].push('2021-09-18');
+      line_graph_data[0]["y"].push(55.84);
+    
+      line_graph_data[0]["x"].push('2021-09-19');
+      line_graph_data[0]["y"].push(55.84);
+    
+      line_graph_data[0]["x"].push('2021-09-20');
+      line_graph_data[0]["y"].push(56.15);
+    
+      line_graph_data[0]["x"].push('2021-09-21');
+      line_graph_data[0]["y"].push(56.25);
+    
+      line_graph_data[0]["x"].push('2021-09-22');
+      line_graph_data[0]["y"].push(56.34);
+    
+      line_graph_data[0]["x"].push('2021-09-23');
+      line_graph_data[0]["y"].push(56.48);
+    
+      line_graph_data[0]["x"].push('2021-09-24');
+      line_graph_data[0]["y"].push(56.59);
+    
+      line_graph_data[0]["x"].push('2021-09-25');
+      line_graph_data[0]["y"].push(56.75);
+    
+      line_graph_data[0]["x"].push('2021-09-26');
+      line_graph_data[0]["y"].push(56.89);
+    
+      line_graph_data[0]["x"].push('2021-09-27');
+      line_graph_data[0]["y"].push(57.01);
+    
+      line_graph_data[0]["x"].push('2021-09-28');
+      line_graph_data[0]["y"].push(57.1);
+    
+      line_graph_data[0]["x"].push('2021-09-29');
+      line_graph_data[0]["y"].push(57.1);
+    
+      line_graph_data[0]["x"].push('2021-09-30');
+      line_graph_data[0]["y"].push(57.27);
+    
+      line_graph_data[0]["x"].push('2021-10-01');
+      line_graph_data[0]["y"].push(57.36);
+    
+      line_graph_data[0]["x"].push('2021-10-02');
+      line_graph_data[0]["y"].push(57.42);
+    
+      line_graph_data[0]["x"].push('2021-10-03');
+      line_graph_data[0]["y"].push(57.42);
+    
+      line_graph_data[0]["x"].push('2021-10-04');
+      line_graph_data[0]["y"].push(57.75);
+    
+      line_graph_data[0]["x"].push('2021-10-05');
+      line_graph_data[0]["y"].push(57.83);
+    
+      line_graph_data[0]["x"].push('2021-10-06');
+      line_graph_data[0]["y"].push(57.93);
+    
+      line_graph_data[0]["x"].push('2021-10-07');
+      line_graph_data[0]["y"].push(57.99);
+    
+      line_graph_data[0]["x"].push('2021-10-08');
+      line_graph_data[0]["y"].push(58.13);
+    
+      line_graph_data[0]["x"].push('2021-10-09');
+      line_graph_data[0]["y"].push(58.22);
+    
+      line_graph_data[0]["x"].push('2021-10-10');
+      line_graph_data[0]["y"].push();
+    
+      line_graph_data[0]["x"].push('2021-10-11');
+      line_graph_data[0]["y"].push();
+    
+      line_graph_data[0]["x"].push('2021-10-12');
+      line_graph_data[0]["y"].push(58.41);
+    
+      line_graph_data[0]["x"].push('2021-10-13');
+      line_graph_data[0]["y"].push(58.48);
+    
+      line_graph_data[0]["x"].push('2021-10-14');
+      line_graph_data[0]["y"].push(58.59);
+    
+      line_graph_data[0]["x"].push('2021-10-15');
+      line_graph_data[0]["y"].push(58.67);
+    
+      line_graph_data[0]["x"].push('2021-10-16');
+      line_graph_data[0]["y"].push(58.74);
+    
+      line_graph_data[0]["x"].push('2021-10-17');
+      line_graph_data[0]["y"].push(58.83);
+    
+      line_graph_data[0]["x"].push('2021-10-18');
+      line_graph_data[0]["y"].push(58.9);
+    
+      line_graph_data[0]["x"].push('2021-10-19');
+      line_graph_data[0]["y"].push(58.95);
+    
+      line_graph_data[0]["x"].push('2021-10-20');
+      line_graph_data[0]["y"].push(59.02);
+    
+      line_graph_data[0]["x"].push('2021-10-21');
+      line_graph_data[0]["y"].push(59.02);
+    
+      line_graph_data[0]["x"].push('2021-10-22');
+      line_graph_data[0]["y"].push(59.23);
+    
+      line_graph_data[0]["x"].push('2021-10-23');
+      line_graph_data[0]["y"].push(59.29);
+    
+      line_graph_data[0]["x"].push('2021-10-24');
+      line_graph_data[0]["y"].push(59.35);
+    
+      line_graph_data[0]["x"].push('2021-10-25');
+      line_graph_data[0]["y"].push(59.39);
+    
+      line_graph_data[0]["x"].push('2021-10-26');
+      line_graph_data[0]["y"].push(59.43);
+    
+      line_graph_data[0]["x"].push('2021-10-27');
+      line_graph_data[0]["y"].push(59.49);
+    
+      line_graph_data[0]["x"].push('2021-10-28');
+      line_graph_data[0]["y"].push(59.57);
+    
+      line_graph_data[0]["x"].push('2021-10-29');
+      line_graph_data[0]["y"].push(59.62);
+    
+      line_graph_data[0]["x"].push('2021-10-30');
+      line_graph_data[0]["y"].push(59.68);
+    
+      line_graph_data[0]["x"].push('2021-10-31');
+      line_graph_data[0]["y"].push(59.75);
+    
+      line_graph_data[0]["x"].push('2021-11-01');
+      line_graph_data[0]["y"].push(59.8);
+    
+      line_graph_data[0]["x"].push('2021-11-02');
+      line_graph_data[0]["y"].push(59.83);
+    
+      line_graph_data[0]["x"].push('2021-11-03');
+      line_graph_data[0]["y"].push(59.88);
+    
+      line_graph_data[0]["x"].push('2021-11-04');
+      line_graph_data[0]["y"].push(59.94);
+    
+      line_graph_data[0]["x"].push('2021-11-05');
+      line_graph_data[0]["y"].push(59.98);
+    
+      line_graph_data[0]["x"].push('2021-11-06');
+      line_graph_data[0]["y"].push(60.02);
+    
+      line_graph_data[0]["x"].push('2021-11-07');
+      line_graph_data[0]["y"].push(60.08);
+    
+      line_graph_data[0]["x"].push('2021-11-08');
+      line_graph_data[0]["y"].push(60.17);
+    
+      line_graph_data[0]["x"].push('2021-11-09');
+      line_graph_data[0]["y"].push(60.2);
+    
+      line_graph_data[0]["x"].push('2021-11-10');
+      line_graph_data[0]["y"].push(60.25);
+    
+      line_graph_data[0]["x"].push('2021-11-11');
+      line_graph_data[0]["y"].push();
+    
+      line_graph_data[0]["x"].push('2021-11-12');
+      line_graph_data[0]["y"].push(60.38);
+    
+      line_graph_data[0]["x"].push('2021-11-13');
+      line_graph_data[0]["y"].push(60.45);
+    
+      line_graph_data[0]["x"].push('2021-11-14');
+      line_graph_data[0]["y"].push(60.53);
+    
+    let layout = {
+      width: 600,
+      height:400,
+      title: 'Florida: People Fully Vaccinated Per Hundred vs. Time',
+      xaxis:{
+        title: "Time"
+      },
+      yaxis:{
+        title: "People Fully Vaccinated Per Hundred",
+        range: [0, 70]
+      }
+    };
+    Plotly.newPlot(document.getElementById("line_graph"), line_graph_data, layout);
+  </script>
+
   <div id="map"></div>
   <script>
-    let vax_per_hundred = [object Object];
-    var map_data = [{
-      type: "choroplethmapbox", locations: ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"], z: [141, 140, 155, 147, 132, 146, 151, 137, 146, 136, 145, 141, 149, 151, 138, 158, 164, 141, 146, 145, 142, 150, 155, 160, 156, 161, 147, 164, 150, 152, 155, 167, 145, 146, 151, 154, 161, 145, 155, 150, 151, 162, 172, 169, 170, 151, 152, 173, 160, 176],
+    let vax_per_hundred = 2021-01-12;
+    let map_data = [{
+      type: "choroplethmapbox",
+      locations: ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"],
+      z: [141, 140, 155, 147, 132, 146, 151, 137, 146, 136, 145, 141, 149, 151, 138, 158, 164, 141, 146, 145, 142, 150, 155, 160, 156, 161, 147, 164, 150, 152, 155, 167, 145, 146, 151, 154, 161, 145, 155, 150, 151, 162, 172, 169, 170, 151, 152, 173, 160, 176],
       geojson: "https://raw.githubusercontent.com/python-visualization/folium/master/examples/data/us-states.json"
     }];
-    var layout = {mapbox: {center: {lon: -74, lat: 43}, zoom: 3.5},
-              width: 1200, height:800};
-    var config = {mapboxAccessToken: "pk.eyJ1Ijoiam1vc2hlYSIsImEiOiJja3dqdWtoeHExbHppMnVxdDFid2hlbTY0In0.SjUkWcStRszcRlyIYKWkSw"};
-    Plotly.newPlot('map', map_data, layout, config);
+    let config = {mapboxAccessToken: "pk.eyJ1Ijoiam1vc2hlYSIsImEiOiJja3dqdWtoeHExbHppMnVxdDFid2hlbTY0In0.SjUkWcStRszcRlyIYKWkSw"};
+    Plotly.newPlot(document.getElementById("map"), map_data, config);
   </script>
-  <section id="vaccine-table">
+  <!-- <section id="vaccine-table">
     <table>
       <tr>
         <th>Date</th>
@@ -1942,7 +2883,7 @@
       </tr>
       
     </table>
-  </section>
+  </section> -->
 
   <footer class="container">
   <p class="text-center">We would like to thank Our World in Data for access to their <a href="https://github.com/owid/covid-19-data/tree/master/public/data/vaccinations">dataset<a>. Our project examines and provides a visual representation of vaccination rates and total vaccinations across the United States at both a country and state level.</p>
