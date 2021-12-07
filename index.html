@@ -43,25 +43,25 @@
           </a>
           <ul class="dropdown-menu" id="state-dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             
-            <li><a class="dropdown-item" href=alabama.html>Alabama</a></li>
+            <li><a class="dropdown-item" href='alabama.html'>Alabama</a></li>
             
-            <li><a class="dropdown-item" href=alaska.html>Alaska</a></li>
+            <li><a class="dropdown-item" href='alaska.html'>Alaska</a></li>
             
-            <li><a class="dropdown-item" href=california.html>California</a></li>
+            <li><a class="dropdown-item" href='california.html'>California</a></li>
             
-            <li><a class="dropdown-item" href=florida.html>Florida</a></li>
+            <li><a class="dropdown-item" href='florida.html'>Florida</a></li>
             
-            <li><a class="dropdown-item" href=hawaii.html>Hawaii</a></li>
+            <li><a class="dropdown-item" href='hawaii.html'>Hawaii</a></li>
             
-            <li><a class="dropdown-item" href=michigan.html>Michigan</a></li>
+            <li><a class="dropdown-item" href='michigan.html'>Michigan</a></li>
             
-            <li><a class="dropdown-item" href=new_york_state.html>New York State</a></li>
+            <li><a class="dropdown-item" href='new_york_state.html'>New York State</a></li>
             
-            <li><a class="dropdown-item" href=texas.html>Texas</a></li>
+            <li><a class="dropdown-item" href='texas.html'>Texas</a></li>
             
-            <li><a class="dropdown-item" href=washington.html>Washington</a></li>
+            <li><a class="dropdown-item" href='washington.html'>Washington</a></li>
             
-            <li><a class="dropdown-item" href=wisconsin.html>Wisconsin</a></li>
+            <li><a class="dropdown-item" href='wisconsin.html'>Wisconsin</a></li>
             
           </ul>
         </li>
@@ -79,146 +79,180 @@
   </div>
 </nav>
 
-  <div class="text-center" id="map"></div>
+  <section class="container">
+    <h1 class="h1">Vaccination Rates Per Hundred Across the US</h1>
+    <br>
+    <p class="text-center">Prose Based Summary</p>
+    <br>
+  </section>
+  <section class="container text-center">
+    <div id="map"></div>
+  </section>
   <script>
     let vax_per_hundred = [];
+    let places = [];
     
       vax_per_hundred.push(45.45);
+      places.push('AL');
     
       vax_per_hundred.push(53.46);
-    
-      vax_per_hundred.push(65.86);
+      places.push('AK');
     
       vax_per_hundred.push(53.92);
+      places.push('AZ');
     
       vax_per_hundred.push(48.73);
-    
-      vax_per_hundred.push();
+      places.push('AR');
     
       vax_per_hundred.push(62.2);
+      places.push('CA');
     
       vax_per_hundred.push(62.39);
+      places.push('CO');
     
       vax_per_hundred.push(71.38);
+      places.push('CT');
     
       vax_per_hundred.push(60.52);
-    
-      vax_per_hundred.push();
-    
-      vax_per_hundred.push(63.47);
-    
-      vax_per_hundred.push(40.61);
+      places.push('DE');
     
       vax_per_hundred.push(60.53);
+      places.push('FL');
     
       vax_per_hundred.push(48.8);
-    
-      vax_per_hundred.push(72.55);
+      places.push('GA');
     
       vax_per_hundred.push(60.36);
+      places.push('HI');
     
       vax_per_hundred.push(44.61);
+      places.push('ID');
     
       vax_per_hundred.push(61.41);
-    
-      vax_per_hundred.push(37.41);
+      places.push('IL');
     
       vax_per_hundred.push(50.23);
+      places.push('IN');
     
       vax_per_hundred.push(56.12);
+      places.push('IA');
     
       vax_per_hundred.push(53.93);
+      places.push('KS');
     
       vax_per_hundred.push(51.47);
-    
-      vax_per_hundred.push();
+      places.push('KY');
     
       vax_per_hundred.push(48.29);
+      places.push('LA');
     
       vax_per_hundred.push(71.45);
-    
-      vax_per_hundred.push(27.67);
+      places.push('ME');
     
       vax_per_hundred.push(66.68);
+      places.push('MD');
     
       vax_per_hundred.push(70.39);
+      places.push('MA');
     
       vax_per_hundred.push(54.07);
+      places.push('MI');
     
       vax_per_hundred.push(61.85);
+      places.push('MN');
     
       vax_per_hundred.push(46.4);
+      places.push('MS');
     
       vax_per_hundred.push(50.43);
+      places.push('MO');
     
       vax_per_hundred.push(51.19);
+      places.push('MT');
     
       vax_per_hundred.push(56.8);
+      places.push('NE');
     
       vax_per_hundred.push(53.77);
+      places.push('NV');
     
       vax_per_hundred.push(63.54);
+      places.push('NH');
     
       vax_per_hundred.push(67.09);
+      places.push('NJ');
     
       vax_per_hundred.push(62.87);
+      places.push('NM');
     
       vax_per_hundred.push(67.61);
+      places.push('NY');
     
       vax_per_hundred.push(53.48);
+      places.push('NC');
     
       vax_per_hundred.push(48.17);
-    
-      vax_per_hundred.push(67.84);
+      places.push('ND');
     
       vax_per_hundred.push(52.42);
+      places.push('OH');
     
       vax_per_hundred.push(50.87);
+      places.push('OK');
     
       vax_per_hundred.push(63.46);
+      places.push('OR');
     
       vax_per_hundred.push(61.64);
-    
-      vax_per_hundred.push(74.18);
-    
-      vax_per_hundred.push(73.14);
+      places.push('PA');
     
       vax_per_hundred.push(71.7);
+      places.push('RI');
     
       vax_per_hundred.push(50.73);
+      places.push('SC');
     
       vax_per_hundred.push(53.68);
+      places.push('SD');
     
       vax_per_hundred.push(48.84);
+      places.push('TN');
     
       vax_per_hundred.push(54.05);
-    
-      vax_per_hundred.push(58.77);
+      places.push('TX');
     
       vax_per_hundred.push(54.5);
+      places.push('UT');
     
       vax_per_hundred.push(72.04);
-    
-      vax_per_hundred.push();
-    
-      vax_per_hundred.push(47);
+      places.push('VT');
     
       vax_per_hundred.push(64.01);
+      places.push('VA');
     
       vax_per_hundred.push(64.21);
+      places.push('WA');
     
       vax_per_hundred.push(41.17);
+      places.push('WV');
     
       vax_per_hundred.push(58.95);
+      places.push('WI');
     
       vax_per_hundred.push(44.79);
+      places.push('WY');
     
+
     var map_data = [{
-      type: "choroplethmapbox", locations: ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"], z: vax_per_hundred,
+      type: "choroplethmapbox", locations: places, z: vax_per_hundred,
       geojson: "https://raw.githubusercontent.com/python-visualization/folium/master/examples/data/us-states.json"
     }];
-    var layout = {mapbox: {center: {lon: -74, lat: 43}, zoom: 3.5},
-              width: 1200, height:800};
+    var layout = {
+      mapbox: {center: {lon: -95, lat: 37}, zoom: 3},
+      width: 900,
+      height:600,
+      title: 'People Fully Vaccinated Per Hundred As Of 11/14/2021',
+    };
     var config = {mapboxAccessToken: "pk.eyJ1Ijoiam1vc2hlYSIsImEiOiJja3dqdWtoeHExbHppMnVxdDFid2hlbTY0In0.SjUkWcStRszcRlyIYKWkSw"};
     Plotly.newPlot('map', map_data, layout, config);
   </script>

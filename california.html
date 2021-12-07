@@ -36,12 +36,12 @@
         <!-- Next -->
         
         <li class="nav-item">
-          <a class="btn btn-primary ml-2" href=alaska.html role="button">Alaska</a>
+          <a class="btn btn-primary ml-2" href='alaska.html' role="button">Alaska</a>
         </li>
         
         
         <li class="nav-item">
-          <a class="btn btn-primary ml-2" href=florida.html role="button">Florida</a>
+          <a class="btn btn-primary ml-2" href='florida.html' role="button">Florida</a>
         </li>
         
         <!-- States -->
@@ -51,25 +51,25 @@
           </a>
           <ul class="dropdown-menu" id="state-dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             
-            <li><a class="dropdown-item" href=alabama.html>Alabama</a></li>
+            <li><a class="dropdown-item" href='alabama.html'>Alabama</a></li>
             
-            <li><a class="dropdown-item" href=alaska.html>Alaska</a></li>
+            <li><a class="dropdown-item" href='alaska.html'>Alaska</a></li>
             
-            <li><a class="dropdown-item" href=california.html>California</a></li>
+            <li><a class="dropdown-item" href='california.html'>California</a></li>
             
-            <li><a class="dropdown-item" href=florida.html>Florida</a></li>
+            <li><a class="dropdown-item" href='florida.html'>Florida</a></li>
             
-            <li><a class="dropdown-item" href=hawaii.html>Hawaii</a></li>
+            <li><a class="dropdown-item" href='hawaii.html'>Hawaii</a></li>
             
-            <li><a class="dropdown-item" href=michigan.html>Michigan</a></li>
+            <li><a class="dropdown-item" href='michigan.html'>Michigan</a></li>
             
-            <li><a class="dropdown-item" href=new_york_state.html>New York State</a></li>
+            <li><a class="dropdown-item" href='new_york_state.html'>New York State</a></li>
             
-            <li><a class="dropdown-item" href=texas.html>Texas</a></li>
+            <li><a class="dropdown-item" href='texas.html'>Texas</a></li>
             
-            <li><a class="dropdown-item" href=washington.html>Washington</a></li>
+            <li><a class="dropdown-item" href='washington.html'>Washington</a></li>
             
-            <li><a class="dropdown-item" href=wisconsin.html>Wisconsin</a></li>
+            <li><a class="dropdown-item" href='wisconsin.html'>Wisconsin</a></li>
             
           </ul>
         </li>
@@ -87,9 +87,11 @@
   </div>
 </nav>
 
-  <header>
+
+  <header class="container">
     <h1>California</h1>
     <h2>Fully Vaccinated People Over Time</h2>
+    <!--Description of what the graph shows, state's current value for fully vaccinated per hundred (num) is ___ than the average of __ across us states. Out of the 10 states we created micropages for, _state_ ranks _ _-->
   </header>
 
   <div id="line_graph"></div>
@@ -1047,8 +1049,10 @@
       z: [141, 140, 155, 147, 132, 146, 151, 137, 146, 136, 145, 141, 149, 151, 138, 158, 164, 141, 146, 145, 142, 150, 155, 160, 156, 161, 147, 164, 150, 152, 155, 167, 145, 146, 151, 154, 161, 145, 155, 150, 151, 162, 172, 169, 170, 151, 152, 173, 160, 176],
       geojson: "https://raw.githubusercontent.com/python-visualization/folium/master/examples/data/us-states.json"
     }];
-    let config = {mapboxAccessToken: "pk.eyJ1Ijoiam1vc2hlYSIsImEiOiJja3dqdWtoeHExbHppMnVxdDFid2hlbTY0In0.SjUkWcStRszcRlyIYKWkSw"};
-    Plotly.newPlot(document.getElementById("map"), map_data, config);
+    var lay = {mapbox: {center: {lon: -74, lat: 43}, zoom: 3.5},
+              width: 300, height:200};
+    var config = {mapboxAccessToken: "pk.eyJ1Ijoiam1vc2hlYSIsImEiOiJja3dqdWtoeHExbHppMnVxdDFid2hlbTY0In0.SjUkWcStRszcRlyIYKWkSw"};
+    Plotly.newPlot('map', map_data, lay, config);
   </script>
   <!-- <section id="vaccine-table">
     <table>
