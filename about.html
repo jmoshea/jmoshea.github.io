@@ -129,28 +129,65 @@
     </div>
     <p class="text-left">I chose to use the Plotly map template for this lo-fi sketch. In my micro summary sketch, the user sees the United States; each state is color coded based on a key to the percent of that state's vaccinated population. The user gets a quick glance at the vaccination rate of each state. My macro summary sketch, shows the percent of vaccinated individuals in that state as a function of time. I would present this in a line graph. These sketches are very achievable. I would need data sets that include vaccination rates over a period of time. My sketches are meant to be very understandable, giving the user quick information without extraneous detail. If the user wants to learn more about a certain state, all they would have to do is click it. Regarding discoverability, whenever a user clicks on a state, that state would outline in red. I will have to include instructions to indicate the user that they can click on the states. Regarding accessibility, I worry that using different shades of a single color could affect certain color-blind individuals. I believe that our color choice is important for political intent. Red and blue relate to political parties, therefore we should use a more neutral color.
     </p>
+    <br>
+    <br>
+    <p class="text-left">For the macrosummary, our group ultimately decided to use a chloropleth map visually showing the vaccination rates per hundred for US states because this method is easy to understand and it accounts for different population densities. For our microsummaries, we decided to use both the time series/line chart and an image of the state with a slider that can move between different times and change the shading of the state depending on the total vaccination rate. Both
+    these microsummaries represent the same data: vaccination rates per hundred vs time. However, the time series allows the user to see all the data and trends at once, and the chloropleth map with a slider (focused only on an individual state) is visually indicative of the change in vaccination rates over time. They have their distinct benefits.</p>
   </section>
 
   <!-- Project Pipeline Section -->
   <section class="container" id="pipeline">
     <h1 class="h1">Project Pipeline</h1>
     <div class="text-center">
-      <img src="images/lucid-diagram.png" class="img-fluid rounded justify-content-center" style="max-height: 400px;">
+      <img src="images/proj-pipeline.png" class="img-fluid rounded justify-content-center" style="max-height: 400px;">
     </div>
     <br>
     <p class="text-left">Our raw data is currently a table of timestamps organized
     by state, with additional rows listing many different metrics regarding vaccinations.
     We hope to split this data into separate tables for each state, with full vaccinations
-    per hundred people listed by timestamp.</p>
+    per hundred people listed by timestamp. We will format the data into JSON files using
+    generateList.js to generate a list of states from the data set, generateJSON.js to generate
+    an array of objects separated by states with the full state name, and generateJSON2.js to
+    generate the same object structure as generateJSON.js but with state abbreviations instead.
+    After we code the ejs partials and main ejs files (about, index, and macro), we manipulate
+    and send the data from the JSON files into the ejs templating code through siteGenerator.
+    This allows us to dynamically build the HTML pages of the website, and we automate that
+    process by writing a script in package.json that allows us to build the website and later deploy
+    the website to Github Pages.</p>
   </section>
 
   <!-- Div of Labor Section -->
   <section class="container" id="labor">
     <h1 class="h1">Division of Labor</h1>
     <p class="text-left">We are dividing the coding aspect of the project into different sections
-    of the webiste and ejs code: about page, landing page, navbar, images. We will collaborate together to
-    design the ejs code for the micropages, and we will each write the code for 3-4 for micropages
-    individually using the common ejs page.</p>
+    of different Milestones.</p>
+    <h3 class="h3">Milestone 1</h3>
+    <ul>
+      <li><p class="text-left">We individually generated ideas.</p></li>
+    </ul>
+    <h3 class="h3">Milestone 2</h3>
+    <ul>
+      <li><p class="text-left">Gathered and found data as a team.</p></li>
+    </ul>
+    <h3 class="h3">Milestone 3</h3>
+    <ul>
+      <li><p class="text-left">Collectively critiqued sketches to find final approach, wrote vocab, and created initial plans for division of labor.</p></li>
+      <li><p class="text-left">Juliet: Created lucidchart and project pipeline.</p></li>
+      <li><p class="text-left">Brian: Coded basic about.html page w/ bootstrap and inputted info</p></li>
+      <li><p class="text-left">Ben: Formatted and simplified csv data to only include necessary components.</p></li>
+    </ul>
+    <h3 class="h3">Milestone 4</h3>
+    <ul>
+      <li><p class="text-left">Ben: Created framework for generating JSON file from csv code.</p></li>
+      <li><p class="text-left">Juliet: Wrote ejs code for creating micro pages, created github pages repo.</p></li>
+      <li><p class="text-left">Brian: Worked on frontend display and backend code to combine code components to function together.</p></li>
+    </ul>
+    <h3 class="h3">Milestone 5</h3>
+    <ul>
+      <li><p class="text-left">Ben: Created line graph microsummary and wrote summary and details for macropage.</p></li>
+      <li><p class="text-left">Juliet: Created slider microsummary and US macrosummary.</p></li>
+      <li><p class="text-left">Brian: Worked on updating pages and dynamically inserting qualitative descriptions.</p></li>
+    </ul>
   </section>
   <footer class="container">
   <p class="text-center">We would like to thank Our World in Data for access to their <a href="https://github.com/owid/covid-19-data/tree/master/public/data/vaccinations">dataset<a>. Our project examines and provides a visual representation of vaccination rates and total vaccinations across the United States at both a country and state level.</p>
