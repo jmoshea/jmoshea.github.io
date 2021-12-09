@@ -90,11 +90,15 @@
 
   <header class="container">
     <h1>New York State</h1>
+    <br>
     <h2>Fully Vaccinated People Over Time</h2>
     <!--Description of what the graph shows, state's current value for fully vaccinated per hundred (num) is ___ than the average of __ across us states. Out of the 10 states we created micropages for, _state_ ranks _ _-->
+    <p class="text-left">New York State&#39;s current value for fully vaccinated individuals per hundred (67.61) is higher than the average of 56.93299999999999 across all US states. Out of the 10 states we created micropages for, New York State ranks 1 in vaccination rates per hundred.</p>
   </header>
 
-  <div id="line_graph"></div>
+  <section class="container">
+    <div id="line_graph"></div>
+  </section>
   <script>
     let line_graph_data = [
       {
@@ -1052,7 +1056,7 @@
       geojson: "https://raw.githubusercontent.com/python-visualization/folium/master/examples/data/us-states.json",
       zmin: 0, zmax: 100, colorbar: {y: 0, yanchor: "bottom", title: {text: "Vaccinations Per Hundred", side: "right"}}
     }];
-    var lay = {mapbox: {center: {lon: -106.2371, lat: 34.8375}, zoom: 3.5},
+    var lay = {mapbox: {center: {lon: -74.9384, lat: 42.1497}, zoom: 3.5},
               width: 600, height:400};
     var config = {mapboxAccessToken: "pk.eyJ1Ijoiam1vc2hlYSIsImEiOiJja3dqdWtoeHExbHppMnVxdDFid2hlbTY0In0.SjUkWcStRszcRlyIYKWkSw"};
     Plotly.newPlot('map', map_data, lay, config);
