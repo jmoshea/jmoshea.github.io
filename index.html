@@ -81,7 +81,7 @@
 
   <section class="container">
     <br>
-    <h1 class="h1">Vaccination Rates Per Hundred Across the US</h1>
+    <h1 class="h1">COVID Vaccination Rates Across the US Over Time</h1>
     <br>
     <p class="text-center">Our project aims to clearly show vaccination or immunization rates across the United States. The majority of news media programs and publications show biased and partial data aimed towards a political goal. We hope to clearly, and without bias, show which states have effectively immunized their population. Users can use this information to make informed decisions for travel and safety.</p>
     <br>
@@ -245,14 +245,17 @@
     
 
     var map_data = [{
-      type: "choroplethmapbox", locations: places, z: vax_per_hundred,
-      geojson: "https://raw.githubusercontent.com/python-visualization/folium/master/examples/data/us-states.json"
+      type: "choroplethmapbox",
+      locations: places,
+      z: vax_per_hundred,
+      geojson: "https://raw.githubusercontent.com/python-visualization/folium/master/examples/data/us-states.json",
+      colorbar: {y: 0, yanchor: "bottom", title: {text: "Vaccinations Per Hundred", side: "right"}}
     }];
     var layout = {
       mapbox: {center: {lon: -95, lat: 37}, zoom: 3},
       width: 900,
       height:600,
-      title: 'People Fully Vaccinated Per Hundred As Of 11/14/2021',
+      title: 'People Fully Vaccinated Per Hundred in the US As Of 11/14/2021',
     };
     var config = {mapboxAccessToken: "pk.eyJ1Ijoiam1vc2hlYSIsImEiOiJja3dqdWtoeHExbHppMnVxdDFid2hlbTY0In0.SjUkWcStRszcRlyIYKWkSw"};
     Plotly.newPlot('map', map_data, layout, config);
